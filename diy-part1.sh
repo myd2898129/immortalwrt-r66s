@@ -10,5 +10,3 @@
 # See /LICENSE for more information.
 #
 git clone https://github.com/linkease/istore.git package/luci-app-store
-git clone https://github.com/0x676e67/luci-theme-design.git package/luci-theme-design
-git clone https://github.com/0x676e67/luci-app-design-config.git package/luci-app-design-config
