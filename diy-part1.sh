@@ -9,5 +9,4 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-git clone https://github.com/linkease/istore.git package/luci-app-store
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
