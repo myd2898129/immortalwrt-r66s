@@ -31,7 +31,7 @@ env:
 
 jobs:
   build:
-    name: Build R66S immortalwrt v23.05.3 stable
+    name: Build R66S immortalwrt v24.10.0 stable
     runs-on: ubuntu-22.04
 
     steps:
@@ -60,7 +60,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         git tag
-        git checkout v23.05.4
+        git checkout v24.10.0-rc3
 
     - name: Load custom feeds
       run: |
@@ -127,7 +127,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware-v23.05.4${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: OpenWrt_firmware-v24.10.0-rc3${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
