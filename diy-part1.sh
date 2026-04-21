@@ -10,3 +10,5 @@
 # See /LICENSE for more information.
 #
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone https://github.com/eamonxg/luci-theme-aurora.git package/aurora
+git clone https://github.com/eamonxg/luci-app-aurora-config.git package/-config
